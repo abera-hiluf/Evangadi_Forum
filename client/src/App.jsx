@@ -12,7 +12,7 @@ import ProtectedRoute from "./components/protectedRoute/ProtectedRoute.jsx";
 import Answers from "./pages/Answers/Answers.jsx";
 import SignUpPage from "./pages/Signup/SignUpPage.jsx";
 import EditQuestion from "./pages/Questions/EditQuestion.jsx";
-import PagesNotFound from "./pages/404/pagesNotFound.jsx";
+import PagesNotFound from "./pages/404/PagesNotFound.jsx";
 import EditAnswer from "./pages/Answers/EditAnswer.jsx";
 import HowItWorks from "./pages/HowItWorks/HowItWorks.jsx";
 
