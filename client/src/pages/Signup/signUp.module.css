@@ -1,0 +1,44 @@
+.authWrapper {
+  display: flex;
+  margin-top: 5%;
+  flex-direction: row;
+  height: 100vh;
+  background-image: url("../../assets/bg-img.png");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+/* .rightSide a{
+color: orange;
+} */
+
+.leftSide,
+.rightSide {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.rightSide {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .authWrapper {
+    flex-direction: column;
+    padding: 1rem;
+    height: auto;
+  }
+  .leftSide,
+  .rightSide {
+    width: 100%;
+    min-height: 300px;
+    /* margin-bottom: 1rem; */
+  }
+  .rightSide {
+    margin-bottom: 0;
+  }
+}

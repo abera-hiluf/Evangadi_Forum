@@ -1,0 +1,167 @@
+.container {
+  max-width: 1200px;
+  margin: 60px auto 40px auto;
+  padding: 2rem 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.askButton {
+  padding: 0.6rem 1.2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.askButton:hover {
+  background-color: #0056b3;
+}
+
+.heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.message {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.listItem:hover {
+  background-color: #f9f9f9;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.content {
+  flex: 1;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.author {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: #999;
+}
+.meta {
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.searchContainer {
+  position: relative;
+  width: 100%; /* or a fixed width like 300px */
+}
+
+.searchIcon {
+  position: relative;
+  top: 35px;
+  right: -220px; /* push icon from the left */
+  transform: translateX(-50%);
+  font-size: larger;
+  /* color:orange; */
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px 10px 10px 35px; /* padding-left for icon space */
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.searchInput:focus {
+  outline: none;
+  border-color: orange;
+}
+
+
+/* delet css */
+.editButton,
+.deleteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.editButton {
+  color: #007bff;
+}
+
+.deleteButton {
+  color: #dc3545;
+}
+
+.editButton:hover {
+  text-decoration: underline;
+}
+
+.deleteButton:hover {
+  text-decoration: underline;
+}

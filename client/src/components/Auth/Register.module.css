@@ -1,0 +1,117 @@
+.Registercontainer {
+  /* background-color: hsl(0, 0%, 96%); */
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10%;
+}
+
+.container {
+  width: 90%;
+  max-width: 450px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-left: 5rem;
+}
+
+.registration_section {
+  width: 100%;
+}
+
+.RegisterForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.RegisterForm h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.RegisterForm p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.loginLink {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 0.3rem;
+}
+
+.loginLink:hover {
+  text-decoration: underline;
+}
+
+.RegisterFormHeader {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.RegisterFormHeader:focus {
+  border-color: #ccc;
+  border-bottom: 2px solid red; /* highlight bottom only */
+  outline: none;
+}
+
+.error {
+  border-color: red;
+  background-color: #ffe5e5;
+}
+
+.form_flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.form_flex input {
+  flex: 1;
+}
+
+.passwordField {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.passwordField input {
+  width: 100%;
+}
+
+.passwordField span {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+  color: #666;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.RegisterForm a {
+  color: orange;
+  text-decoration: none;
+}
+
+.RegisterForm a:hover {
+  text-decoration: underline;
+}

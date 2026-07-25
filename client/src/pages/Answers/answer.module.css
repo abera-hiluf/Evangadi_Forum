@@ -1,0 +1,130 @@
+.container {
+  width: 90%;
+  /* max-width: 800px; */
+  margin: 5% auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.answerBox {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  list-style-type: none;
+  position: relative;
+}
+
+.answerBox:hover {
+  background-color: #f1f1f1;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.user p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.editButton,
+.deleteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.editButton {
+  color: #007bff;
+}
+
+.deleteButton {
+  color: #dc3545;
+}
+
+.editButton:hover {
+  text-decoration: underline;
+}
+
+.deleteButton:hover {
+  text-decoration: underline;
+}
+
+.form {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  /* border-top: 1px solid #ccc; */
+}
+
+.inputArea {
+  width: 100%;
+  min-height: 100px;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+}
+.inputArea:focus{
+  outline: none;
+  border-color: #007bff;
+}
+
+.submitBtn {
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.submitBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: Pagination styling (if not already in Pagination component) */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 10% !important;
+  position: absolute;
+}
+
+.pageButton {
+  padding: 0.5rem 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pageButton:hover {
+  background-color: #f0f0f0;
+}
+
+.pageButton.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
