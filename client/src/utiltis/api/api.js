@@ -1,8 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:5500/api",
-  // baseURL: "https://evangadidatabase.aberahiluf.com/api",
+  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5500/api",
 });
 
 // Add interceptor to include token in every request
