@@ -56,9 +56,25 @@ function Header() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/"}>
+                <a
+                  className="nav-link"
+                  href="#how-it-works"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const element = document.getElementById("how-it-works");
+                    if (element) {
+                      element.scrollIntoView({ behavior: "smooth" });
+                    } else {
+                      navigate("/login");
+                      setTimeout(() => {
+                        const el = document.getElementById("how-it-works");
+                        if (el) el.scrollIntoView({ behavior: "smooth" });
+                      }, 100);
+                    }
+                  }}
+                >
                   How it works
-                </Link>
+                </a>
               </li>
 
               <li className="nav-item ">

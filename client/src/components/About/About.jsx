@@ -1,10 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import styles from "./about.module.css"
+import styles from "./about.module.css";
 
 function About() {
+  const handleScroll = (e) => {
+    e.preventDefault();
+    const element = document.getElementById("how-it-works");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <section>
+    <section id="how-it-works">
       <div className={styles.contanier}>
         <h2 style={{ color: "orange" }}>About</h2>
         <h1>Evangadi Networks</h1>
@@ -19,8 +26,8 @@ function About() {
           looking to meet mentors of your own, please start by joining the
           network here.
         </p>
-        <button className={styles.buttonLink}>
-          <Link to="#">HOW IT WORKS</Link>
+        <button className={styles.buttonLink} onClick={handleScroll}>
+          HOW IT WORKS
         </button>
         {/* <div className={styles.design_shape}></div> */}
       </div>
@@ -29,3 +36,4 @@ function About() {
 }
 
 export default About;
+

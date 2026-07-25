@@ -72,83 +72,60 @@ function Login() {
   }
 
   return (
-    <>
-      <br />
-      <section className={classes.loginContainer}>
-        <div className="container px-md-5">
-          <div className="row">
-            <div className="col-12  shadow auth mx-md-4 my-md-5">
-              <div className={classes.login_inner}>
-                <div className={classes.Carousel_inner}>
-                  <div className="carousel-item active">
-                    <h3>Login to your account</h3>
-                    <div>
-                      Don't have an account?
-                      <span>
-                        <Link to={"/register"}> Create a new account</Link>
-                      </span>
-                    </div>
-                    {/* error happen on input fileds */}
-                    {errors && Object.values(errors).length > 0 && (
-                      <div className={classes.server_error}>
-                        <div>{Object.values(errors)[0]}</div>
-                      </div>
-                    )}
-                    <form onSubmit={handleSubmit} className={classes.form}>
-                      <div
-                        className={
-                          errors.email
-                            ? classes.error_input
-                            : classes.from_input
-                        }
-                      >
-                        <input
-                          type="email"
-                          placeholder="Email"
-                          ref={userEmail}
-                        />
-                        <span className={classes.line}></span>
-                      </div>
-                      <br />
-                      <div
-                        className={
-                          errors.password
-                            ? classes.error_input
-                            : classes.from_input
-                        }
-                      >
-                        <input
-                          type={showPassword ? "text" : "password"}
-                          placeholder="Password"
-                          ref={userPassword}
-                        />
-                        <span className={classes.line}></span>
-                        <span
-                          className={
-                            errors.password
-                              ? classes.password_toggle_error
-                              : classes.password_toggle
-                          }
-                          onClick={togglePasswordVisibility}
-                        >
-                          {showPassword ? <FiEye /> : <FiEyeOff />}
-                        </span>
-                      </div>
-                      <div className={classes.forget}>
-                        <Link to={"/login"}>Forgot password</Link>
-                      </div>
-                      <div className={classes.btn}>
-                        <button type="submit">Login</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <section className={classes.loginContainer}>
+      <div className={classes.login_inner}>
+        <h3>Login to your account</h3>
+        <p className={classes.sub_header}>
+          Don't have an account?{" "}
+          <span>
+            <Link to={"/register"}>Create a new account</Link>
+          </span>
+        </p>
+        {errors && Object.values(errors).length > 0 && (
+          <div className={classes.server_error}>
+            <div>{Object.values(errors)[0]}</div>
           </div>
-        </div>
-      </section>
-    </>
+        )}
+        <form onSubmit={handleSubmit} className={classes.form}>
+          <div
+            className={
+              errors.email ? classes.error_input : classes.from_input
+            }
+          >
+            <input
+              type="email"
+              placeholder="Email"
+              ref={userEmail}
+            />
+            <span className={classes.line}></span>
+          </div>
+          <div
+            className={
+              errors.password ? classes.error_input : classes.from_input
+            }
+          >
+            <input
+              type={showPassword ? "text" : "password"}
+              placeholder="Password"
+              ref={userPassword}
+            />
+            <span className={classes.line}></span>
+            <span
+              className={classes.password_toggle}
+              onClick={togglePasswordVisibility}
+            >
+              {showPassword ? <FiEye /> : <FiEyeOff />}
+            </span>
+          </div>
+          <div className={classes.forget}>
+            <Link to={"/login"}>Forgot password</Link>
+          </div>
+          <div className={classes.btn}>
+            <button type="submit">Login</button>
+          </div>
+        </form>
+      </div>
+    </section>
   );
 }
 export default Login;
