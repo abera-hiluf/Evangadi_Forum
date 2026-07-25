@@ -3,12 +3,11 @@ import classes from "./Header.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import { AppState } from "../../App";
 import EvangadiLogo from "../../assets/logo.png";
+
 function Header() {
   const { isLoggedIn, logout } = useContext(AppState);
-
-  console.log("isLoggedIn:", isLoggedIn);
-
   const navigate = useNavigate();
+
   const handleLogout = () => {
     logout();
     navigate("/login");
@@ -20,8 +19,8 @@ function Header() {
     >
       <div className="container px-md-4">
         <div className="navbar-brand">
-          <Link to={"/"}>
-            <img src={EvangadiLogo} alt="evangadi-form" />
+          <Link to={isLoggedIn ? "/" : "/register"}>
+            <img src={EvangadiLogo} alt="evangadi-logo" />
           </Link>
         </div>
         <button
@@ -51,33 +50,16 @@ function Header() {
           <div className="offcanvas-body links">
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li className="nav-item">
-                <Link className="nav-link " to={"/"}>
+                <Link className="nav-link" to={isLoggedIn ? "/" : "/register"}>
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="#how-it-works"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const element = document.getElementById("how-it-works");
-                    if (element) {
-                      element.scrollIntoView({ behavior: "smooth" });
-                    } else {
-                      navigate("/login");
-                      setTimeout(() => {
-                        const el = document.getElementById("how-it-works");
-                        if (el) el.scrollIntoView({ behavior: "smooth" });
-                      }, 100);
-                    }
-                  }}
-                >
+                <Link className="nav-link" to="/how-it-works">
                   How it works
-                </a>
+                </Link>
               </li>
-
-              <li className="nav-item ">
+              <li className="nav-item">
                 {isLoggedIn ? (
                   <button
                     data-bs-dismiss="offcanvas"

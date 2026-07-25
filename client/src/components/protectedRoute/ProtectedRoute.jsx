@@ -6,11 +6,11 @@ const ProtectedRoute = ({ children }) => {
   const { isLoggedIn, loading } = useContext(AppState);
 
   if (loading) {
-    return <div>Loading...</div>; // You can make this prettier
+    return <div>Loading...</div>;
   }
 
   if (!isLoggedIn) {
-    return <Navigate to="/login" />;
+    return <Navigate to="/register" />;
   }
 
   return children;

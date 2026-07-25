@@ -1,0 +1,25 @@
+.container {
+  max-width: 900px;
+  margin: 100px auto 60px auto;
+  padding: 2.5rem 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.backButton {
+  background-color: #fe8402;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: background-color 0.2s ease;
+}
+
+.backButton:hover {
+  background-color: #e07300;
+}
