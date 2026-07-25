@@ -54,7 +54,7 @@ function Footer() {
           <ul>
             <h4>Useful Links</h4>
             <li>
-              <Link to="/HowItWorks">How It Works</Link>
+              <Link to="/how-it-works">How It Works</Link>
             </li>
             <li>
               <Link to="/TermsofService">Terms of Service</Link>
