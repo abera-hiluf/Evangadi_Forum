@@ -83,7 +83,8 @@ async function login(req, res) {
     //destructure user
     const username = user[0].username;
     const userid = user[0].userid;
-    const token = jwt.sign({ username, userid }, "secret", {
+    const secret = process.env.JWT_SECRET || "secret";
+    const token = jwt.sign({ username, userid }, secret, {
       expiresIn: "30d",
     });
     return res
