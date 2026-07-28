@@ -38,7 +38,7 @@ The platform is built with a modern decoupled architecture utilizing **React 19 
   - Dynamic user-attribution showing author details and creation timestamps.
   - Real-time display of answer counts and contributions.
 
-- 🎨 **Modern Responsive UI/UX**:
+-  **Modern Responsive UI/UX**:
   - Clean, mobile-friendly interface built with Bootstrap 5 and Material UI icons.
   - Smooth animations powered by Framer Motion.
   - Interactive "How It Works" guide for new users.
@@ -68,7 +68,7 @@ The platform is built with a modern decoupled architecture utilizing **React 19 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Evangadi-ForumG1/
@@ -154,7 +154,7 @@ erDiagram
 
 ---
 
-## ⚙️ Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -231,7 +231,7 @@ Create a PostgreSQL database (e.g., `evangadi_forum`). The backend automatically
 
 ---
 
-## 📦 Production Deployment
+##  Production Deployment
 
 1. **Build Client Bundle**:
    ```bash
@@ -260,4 +260,4 @@ Contributions are what make the open-source community an amazing place to learn,
 
 Distributed under the **ISC License**.
 
-Developed with ❤️ by **Abraham Hiluf** & the Evangadi Community.
+Developed with ❤️ by **Abera Hiluf** & the Evangadi Community.
