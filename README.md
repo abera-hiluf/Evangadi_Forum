@@ -11,7 +11,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 **Evangadi Forum** is a full-stack, interactive Q&A community platform engineered to facilitate knowledge sharing among students, developers, and tech enthusiasts. Modeled after developer forums like Stack Overflow, the platform empowers users to ask questions, share answers, explore topics, and engage with a growing tech community.
 
@@ -21,7 +21,7 @@ The platform is built with a modern decoupled architecture utilizing **React 19 
 
 ## ✨ Features
 
-- 🔐 **User Authentication & Security**:
+-  **User Authentication & Security**:
   - Secure registration & login system.
   - Password hashing with **Bcrypt**.
   - Token-based stateless authentication using **JSON Web Tokens (JWT)**.
@@ -138,7 +138,7 @@ erDiagram
 
 ---
 
-## 🚀 API Endpoint Reference
+##  API Endpoint Reference
 
 | Category | Endpoint | Method | Auth Required | Description |
 | :--- | :--- | :--- | :--- | :--- |
@@ -256,7 +256,7 @@ Contributions are what make the open-source community an amazing place to learn,
 
 ---
 
-## 📄 License & Author
+## License & Author
 
 Distributed under the **ISC License**.
 
